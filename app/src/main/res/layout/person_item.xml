@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/v_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/v_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_1"
+        app:layout_constraintBottom_toTopOf="@id/h_2"
+        android:text="Users Name"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/info_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/v_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_2"
+        app:layout_constraintBottom_toTopOf="@id/h_3"
+        android:textSize="15dp"
+        android:text="Phone"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/info_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/v_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_3"
+        app:layout_constraintBottom_toTopOf="@id/h_4"
+        android:text="Email"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        />
+
+
+    <!--GuideLines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="288dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".8"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
